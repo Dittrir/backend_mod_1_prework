@@ -36,13 +36,15 @@ end
 1. How do you create an instance of a class?
 
 ```ruby
-class Vet_drop_off
-  attr_accessor :pet_name, :pet_breed
+thor = Vet_drop_off.new
+thor.pet_name = "Thor"
+thor.pet_breed = "Pug"
+thor.vet_greeting_msg('Paula')
 
-  def vet_greeting_msg(client_name)
-    puts "Hi #{client_name}, thanks for dropping #{pet_name} off! We love #{pet_breed}s. We will let you know when we are done, so that you can pick #{pet_name} up."
-  end
-end
+chongo = Vet_drop_off.new
+chongo.pet_name = "Chongo"
+chongo.pet_breed = "Australian Sheppard"
+chongo.vet_greeting_msg('Jeff')
 
 ```
 
